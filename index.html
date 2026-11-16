@@ -3,24 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#1F8A5B">
-<title>Net Confort — Nettoyage, entretien et dépannage de climatisation, ménage et voiture en Île-de-France</title>
-<meta name="description" content="Net Confort : nettoyage, entretien et dépannage de climatisation (split, VRV, pompe à chaleur), ménage, fin de bail et nettoyage de voiture. Partout en Île-de-France. Estimez votre prix et demandez un devis gratuit sur WhatsApp.">
+<meta name="theme-color" content="#1B7F52">
+<title>Net Confort — Clim, ménage et voiture en Île-de-France</title>
+<meta name="description" content="Nettoyage, entretien et dépannage de clim, ménage, fin de bail et nettoyage de voiture chez vous, partout en Île-de-France. Estimez votre prix, devis gratuit sur WhatsApp.">
 <meta property="og:title" content="Net Confort — Clim, ménage et voiture en Île-de-France">
 <meta property="og:description" content="Nettoyage de clim dès 79 €, ménage dès 23 €/h, voiture dès 79 €. Devis gratuit sur WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='58' fill='%231F8A5B'/%3E%3Ctext x='60' y='84' font-size='70' font-weight='700' text-anchor='middle' fill='white' font-family='Georgia,serif'%3EN%3C/text%3E%3C/svg%3E">
+<meta property="og:url" content="https://net-clim.vercel.app/">
+<meta property="og:image" content="https://net-clim.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='58' fill='%231B7F52'/%3E%3Ctext x='60' y='84' font-size='70' font-weight='700' text-anchor='middle' fill='white' font-family='Georgia,serif'%3EN%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Net Confort","description":"Nettoyage, entretien et dépannage de climatisation, ménage, fin de bail et nettoyage de voiture chez les particuliers.","url":"https://net-clim.vercel.app/","telephone":"+33749897428","email":"netclim@gmail.com","areaServed":{"@type":"AdministrativeArea","name":"Île-de-France"},"priceRange":"€","hasOfferCatalog":{"@type":"OfferCatalog","name":"Prestations","itemListElement":[{"@type":"Offer","name":"Nettoyage de climatisation, 1 split","price":"79","priceCurrency":"EUR"},{"@type":"Offer","name":"Nettoyage de climatisation, 2 splits","price":"129","priceCurrency":"EUR"},{"@type":"Offer","name":"Nettoyage de voiture, intérieur et extérieur","price":"79","priceCurrency":"EUR"},{"@type":"Offer","name":"Ménage à domicile, par heure","price":"23","priceCurrency":"EUR"}]}}
+</script>
 <style>
-:root{--creme:#F6F1E7;--encre:#1F2A44;--accent:#1F8A5B;--accent2:#E4572E;--trait:#E2DACB;--menthe:#EAF3EC}
+:root{--creme:#F6F1E7;--encre:#1F2A44;--accent:#1B7F52;--accent2:#C8441C;--trait:#E2DACB;--menthe:#EAF3EC}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{background:var(--creme);color:var(--encre);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;padding-bottom:96px}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--creme);color:var(--encre);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
 
 /* Animations */
 @keyframes monte{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes tourne{from{opacity:0;transform:rotate(-180deg) scale(.5)}to{opacity:1;transform:none}}
-@keyframes pouls{0%{box-shadow:0 0 0 0 rgba(31,138,91,.45)}70%{box-shadow:0 0 0 14px rgba(31,138,91,0)}100%{box-shadow:0 0 0 0 rgba(31,138,91,0)}}
+@keyframes pouls{0%{box-shadow:0 0 0 0 rgba(27,127,82,.45)}70%{box-shadow:0 0 0 14px rgba(27,127,82,0)}100%{box-shadow:0 0 0 0 rgba(27,127,82,0)}}
 @keyframes onde{to{transform:scale(1);opacity:0}}
 @keyframes pop{0%{transform:scale(.85)}60%{transform:scale(1.08)}100%{transform:scale(1)}}
 @keyframes arrive{from{transform:translateX(-140%)}to{transform:none}}
@@ -45,16 +54,19 @@ main{max-width:520px;margin:0 auto;padding:20px}
 .hero>*:nth-child(3){animation-delay:.16s}
 .hero>*:nth-child(4){animation-delay:.24s}
 .hero>*:nth-child(6){animation-delay:.5s}
+.hero>*:nth-child(7){animation-delay:.6s}
 .pastille{display:inline-block;background:var(--accent);color:#fff;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:99px}
-h1{font-family:Georgia,"Times New Roman",serif;font-size:2.05rem;line-height:1.14;margin:14px 0 12px}
-h2{font-family:Georgia,"Times New Roman",serif;font-size:1.4rem;margin:40px 0 14px}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:2.05rem;line-height:1.14;margin:14px 0 12px;text-wrap:balance}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:1.4rem;margin:40px 0 14px;text-wrap:balance}
 h2::after{content:"";display:block;width:44px;height:4px;border-radius:2px;background:var(--accent);margin-top:8px}
 p{font-size:1.05rem}
-.bouton{display:block;text-align:center;background:var(--accent);color:#fff;font-weight:700;font-size:1.1rem;padding:18px;border-radius:16px;text-decoration:none;margin-top:20px;box-shadow:0 6px 16px rgba(31,138,91,.28);transition:transform .2s}
+.bouton{display:block;text-align:center;background:var(--accent);color:#fff;font-weight:700;font-size:1.1rem;padding:18px;border-radius:16px;text-decoration:none;margin-top:20px;box-shadow:0 6px 16px rgba(27,127,82,.28);transition:transform .2s}
 .bouton:active{transform:scale(.97)}
 .hero .bouton{animation:monte .7s .32s ease both,pouls 2.6s 1.4s infinite}
 .barre .bouton{animation:pouls 2.6s 1s infinite}
-.sous{font-size:.9rem;opacity:.75;margin-top:10px;text-align:center}
+.sous{font-size:.9rem;opacity:.8;margin-top:10px;text-align:center}
+.appel{text-align:center;margin-top:12px;font-size:1rem}
+.appel a{color:#146B44;font-weight:700}
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .badge{background:#fff;border:1px solid var(--trait);border-radius:99px;padding:6px 12px;font-size:.85rem;font-weight:600}
 .promo{background:#fff;border:2px dashed var(--accent2);border-radius:14px;padding:14px 16px;margin-top:18px}
@@ -63,29 +75,29 @@ p{font-size:1.05rem}
 /* Estimateur */
 .est{background:#fff;border:1px solid var(--trait);border-radius:18px;padding:18px}
 .choix{display:flex;flex-wrap:wrap;gap:8px}
-.cb{--rip:rgba(31,138,91,.28);border:1.5px solid var(--trait);background:var(--creme);border-radius:99px;padding:10px 14px;font-weight:600;font-size:.95rem;color:var(--encre);font-family:inherit;cursor:pointer;transition:transform .15s,background .2s,border-color .2s,color .2s}
+.cb{--rip:rgba(27,127,82,.28);border:1.5px solid var(--trait);background:var(--creme);border-radius:99px;padding:10px 14px;font-weight:600;font-size:.95rem;color:var(--encre);font-family:inherit;cursor:pointer;transition:transform .15s,background .2s,border-color .2s,color .2s}
 .cb.on{--rip:rgba(255,255,255,.45);background:var(--accent);border-color:var(--accent);color:#fff}
 .cb:active{transform:scale(.94)}
 .champ{margin-top:16px;animation:monte .35s ease both}
-.champ label{display:block;font-weight:700;margin-bottom:8px}
-.note{display:block;opacity:.75;font-size:.88rem;margin-top:8px}
+.champ .lib{display:block;font-weight:700;margin-bottom:8px}
+.note{display:block;opacity:.8;font-size:.88rem;margin-top:8px}
 .pm{display:flex;align-items:center;gap:14px}
-.pm button{--rip:rgba(31,138,91,.28);width:46px;height:46px;border-radius:50%;border:1.5px solid var(--accent);background:#fff;color:var(--accent);font-size:1.5rem;font-weight:700;line-height:1;cursor:pointer;font-family:inherit;transition:transform .15s}
+.pm button{--rip:rgba(27,127,82,.28);width:46px;height:46px;border-radius:50%;border:1.5px solid var(--accent);background:#fff;color:var(--accent);font-size:1.5rem;font-weight:700;line-height:1;cursor:pointer;font-family:inherit;transition:transform .15s}
 .pm button:active{transform:scale(.9)}
 .pm output{font-family:Georgia,serif;font-size:1.6rem;font-weight:700;min-width:60px;text-align:center}
 .res{margin-top:18px;background:var(--menthe);border-radius:14px;padding:14px 16px;text-align:center}
 .res.pop .v{animation:pop .35s ease}
 .res .v{font-family:Georgia,serif;font-size:2.1rem;font-weight:700;color:var(--accent);display:block}
-.res small{display:block;opacity:.85;font-size:.9rem}
-.res .info{opacity:.7;font-size:.8rem;margin-top:6px}
+.res small{display:block;opacity:.9;font-size:.9rem}
+.res .info{opacity:.75;font-size:.8rem;margin-top:6px}
 
 .prix{display:grid;gap:12px}
 .carte{position:relative;background:#fff;border:1px solid var(--trait);border-left:6px solid var(--accent);border-radius:14px;padding:16px 18px;transition:opacity .6s ease,transform .25s ease,box-shadow .25s ease}
 .carte:active{transform:translateY(-3px);box-shadow:0 10px 22px rgba(31,42,68,.12)}
 .ico{position:absolute;top:14px;right:14px;width:34px;height:34px;color:var(--accent);fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .carte .montant{font-family:Georgia,serif;font-size:1.55rem;font-weight:700;color:var(--accent);display:block}
-.carte strong{display:block;font-size:1.05rem;margin-top:2px;padding-right:40px}
-.carte small{display:block;opacity:.78;margin-top:6px;font-size:.92rem}
+.carte strong{display:block;font-size:1.05rem;margin-top:2px;padding-right:40px;text-wrap:balance}
+.carte small{display:block;opacity:.82;margin-top:6px;font-size:.92rem}
 .etiquette{display:inline-block;background:var(--accent2);color:#fff;font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:99px;margin-bottom:6px;letter-spacing:.04em;text-transform:uppercase}
 
 /* Voiture */
@@ -112,19 +124,20 @@ ol.etapes li{counter-increment:e;display:flex;gap:14px;align-items:flex-start;pa
 ol.etapes li::before{content:counter(e);flex:none;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
 ol.etapes strong{display:block}
 details{background:#fff;border:1px solid var(--trait);border-radius:14px;padding:14px 16px;margin-top:10px}
-summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary{font-weight:700;cursor:pointer;list-style:none;text-wrap:balance;display:flex;justify-content:space-between;align-items:center;gap:12px}
 summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--accent);transition:transform .25s}
 details[open] summary::after{transform:rotate(45deg)}
 details[open] p{animation:monte .35s ease both}
 details p{margin-top:8px;font-size:1rem}
-.barre{position:fixed;left:0;right:0;bottom:0;background:#F6F1E7;border-top:1px solid var(--trait);padding:12px 16px}
+.barre{position:fixed;left:0;right:0;bottom:0;background:#F6F1E7;border-top:1px solid var(--trait);padding:12px 16px;transition:transform .35s ease}
+.barre.cache{transform:translateY(110%)}
 .barre a{margin:0 auto;max-width:520px;margin-top:0}
 .toast{position:fixed;left:50%;bottom:104px;transform:translate(-50%,20px);background:var(--encre);color:#fff;font-weight:600;padding:12px 18px;border-radius:99px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:30;font-size:.95rem;white-space:nowrap}
 .toast.on{opacity:1;transform:translate(-50%,0)}
 footer{background:var(--encre);color:#fff;margin-top:40px}
-footer .in{max-width:520px;margin:0 auto;padding:28px 20px}
-footer p{font-size:.88rem;margin-bottom:8px;opacity:.9}
+footer .in{max-width:520px;margin:0 auto;padding:28px 20px 112px}
+footer p{font-size:.88rem;margin-bottom:8px;opacity:.92}
 footer a{color:#fff;font-weight:600}
 
 @media (prefers-reduced-motion:reduce){
@@ -139,7 +152,7 @@ footer a{color:#fff;font-weight:600}
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="i-flocon" viewBox="-20 -20 40 40"><path d="M0 0V-17M0 -9L-4 -13M0 -9L4 -13"/><path transform="rotate(60)" d="M0 0V-17M0 -9L-4 -13M0 -9L4 -13"/><path transform="rotate(120)" d="M0 0V-17M0 -9L-4 -13M0 -9L4 -13"/><path transform="rotate(180)" d="M0 0V-17M0 -9L-4 -13M0 -9L4 -13"/><path transform="rotate(240)" d="M0 0V-17M0 -9L-4 -13M0 -9L4 -13"/><path transform="rotate(300)" d="M0 0V-17M0 -9L-4 -13M0 -9L4 -13"/></symbol>
-<symbol id="i-outil" viewBox="-20 -20 40 40"><circle cx="-8" cy="-8" r="6"/><path d="M-4 -4L15 15"/></symbol>
+<symbol id="i-outil" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
 <symbol id="i-etincelle" viewBox="-20 -20 40 40"><path d="M0 -16L4 -4L16 0L4 4L0 16L-4 4L-16 0L-4 -4Z"/></symbol>
 <symbol id="i-maison" viewBox="-20 -20 40 40"><path d="M-15 1L0 -14L15 1"/><path d="M-11 -2V15H11V-2"/><path d="M-3 15V6H3V15"/></symbol>
 <symbol id="i-voiture" viewBox="-20 -20 40 40"><path d="M-17 7V-1L-12 -2L-8 -10H8L12 -2L17 -1V7Z"/><circle cx="-9" cy="9" r="3.5"/><circle cx="9" cy="9" r="3.5"/></symbol>
@@ -149,7 +162,7 @@ footer a{color:#fff;font-weight:600}
 <svg class="logo" viewBox="0 0 120 120" role="img" aria-label="Logo Net Confort">
 <circle cx="60" cy="60" r="56" fill="#fff" stroke="#1F2A44" stroke-width="4"/>
 <g transform="translate(60 60) scale(.2)">
-<defs><g id="b" stroke="#1F8A5B" stroke-width="16" stroke-linecap="round" fill="none"><path d="M0 0V-190M0 -105L-48 -153M0 -105L48 -153M0 -150L-30 -180M0 -150L30 -180"/></g></defs>
+<defs><g id="b" stroke="#1B7F52" stroke-width="16" stroke-linecap="round" fill="none"><path d="M0 0V-190M0 -105L-48 -153M0 -105L48 -153M0 -150L-30 -180M0 -150L30 -180"/></g></defs>
 <use href="#b"/><use href="#b" transform="rotate(60)"/><use href="#b" transform="rotate(120)"/><use href="#b" transform="rotate(180)"/><use href="#b" transform="rotate(240)"/><use href="#b" transform="rotate(300)"/>
 <circle r="26" fill="#1F2A44"/>
 </g></svg>
@@ -161,20 +174,21 @@ footer a{color:#fff;font-weight:600}
 <section class="hero">
 <span class="pastille">Île-de-France</span>
 <h1>Votre clim, votre logement et votre voiture, impeccables.</h1>
-<p>Net Confort, entreprise de nettoyage, intervient chez les particuliers : nettoyage, entretien et dépannage de climatisation, ménage, fin de bail et nettoyage de voiture.</p>
+<p>Net Confort, entreprise de nettoyage, intervient chez les particuliers&nbsp;: nettoyage, entretien et dépannage de climatisation, ménage, fin de bail et nettoyage de voiture.</p>
 <div class="badges">
 <span class="badge">Devis gratuit</span>
 <span class="badge">Prix annoncé d'avance</span>
-<span class="badge">Repasse gratuite sous 48 h</span>
+<span class="badge">Repasse gratuite sous 48&nbsp;h</span>
 </div>
 <a class="bouton" href="https://wa.me/33749897428?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20">Demander un devis sur WhatsApp</a>
 <p class="sous">Gratuit, sans engagement. Réponse en général dans la journée.</p>
+<p class="appel">Vous préférez appeler&nbsp;? <a href="tel:+33749897428">07 49 89 74 28</a></p>
 </section>
 
-<div class="promo"><strong>Offre de lancement :</strong> -10 % sur la première intervention.</div>
+<div class="promo"><strong>Offre de lancement&nbsp;:</strong> -10&nbsp;% sur la première intervention.</div>
 
-<h2>Estimez votre prix</h2>
-<div class="est" id="estim">
+<h2 id="estim">Estimez votre prix</h2>
+<div class="est">
 <div class="choix" id="choixPresta">
 <button type="button" class="cb on" data-p="clim">Nettoyage clim</button>
 <button type="button" class="cb" data-p="dep">Dépannage clim</button>
@@ -184,7 +198,7 @@ footer a{color:#fff;font-weight:600}
 </div>
 <div id="champs"></div>
 <div class="res" id="res" aria-live="polite">
-<strong class="v" id="prixVal">79 €</strong>
+<strong class="v" id="prixVal">79&nbsp;€</strong>
 <small id="prixPromo"></small>
 <div class="info">Estimation indicative. Le prix exact figure dans un devis écrit, gratuit.</div>
 </div>
@@ -193,33 +207,33 @@ footer a{color:#fff;font-weight:600}
 
 <h2>Prestations</h2>
 <div class="prix">
-<div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-flocon"/></svg><span class="etiquette">Spécialité</span><span class="montant">79 €</span><strong>Nettoyage de climatisation, 1 appareil</strong><small>Filtres, unité intérieure, évacuation. 2 appareils : 129 €. Gainable, cassette, VRV, pompe à chaleur : sur devis.</small></div>
-<div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-outil"/></svg><span class="etiquette">Spécialité</span><span class="montant">Sur devis</span><strong>Entretien et dépannage de climatisation</strong><small>Diagnostic de panne et dépannages courants : évacuation bouchée, filtres, télécommande, réglages. Hors circuit de fluide frigorigène (recharge, fuite).</small></div>
-<div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-etincelle"/></svg><span class="montant">23 €/h</span><strong>Ménage et nettoyage général</strong><small>Logement, vitres, entretien régulier ou ponctuel. Minimum 2 h.</small></div>
+<div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-flocon"/></svg><span class="etiquette">Spécialité</span><span class="montant">79&nbsp;€</span><strong>Nettoyage de climatisation, 1&nbsp;split</strong><small>Filtres, unité intérieure, évacuation. 2 splits&nbsp;: 129&nbsp;€. Gainable, cassette, console, VRV, pompe à chaleur&nbsp;: sur devis.</small></div>
+<div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-outil"/></svg><span class="etiquette">Spécialité</span><span class="montant">Sur devis</span><strong>Entretien et dépannage de climatisation</strong><small>Diagnostic de panne et dépannages courants&nbsp;: évacuation bouchée, filtres, télécommande, réglages. Hors circuit de fluide frigorigène (recharge, fuite).</small></div>
+<div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-etincelle"/></svg><span class="montant">23&nbsp;€/h</span><strong>Ménage et nettoyage général</strong><small>Logement, vitres, entretien régulier ou ponctuel. Minimum 2&nbsp;h.</small></div>
 <div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-maison"/></svg><span class="montant">Sur devis</span><strong>Fin de bail et après déménagement</strong><small>Visite gratuite, prix fixé avant de commencer.</small></div>
-<div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-voiture"/></svg><span class="montant">79 €</span><strong>Nettoyage de voiture, intérieur et extérieur</strong><small>Chez vous. Intérieur seul : 49 €. Shampouinage des sièges en option : +50 €. SUV, utilitaire ou voiture très sale : sur devis.</small></div>
+<div class="carte"><svg class="ico" aria-hidden="true"><use href="#i-voiture"/></svg><span class="montant">79&nbsp;€</span><strong>Nettoyage de voiture, intérieur et extérieur</strong><small>Chez vous. Intérieur seul&nbsp;: 49&nbsp;€. Shampouinage des sièges en option&nbsp;: +50&nbsp;€. SUV, utilitaire ou voiture très sale&nbsp;: sur devis.</small></div>
 </div>
 <p class="sous" style="text-align:left">Prix de départ, toutes taxes comprises. Le prix exact figure dans un devis écrit, gratuit, remis avant l'intervention.</p>
 
 <section class="voit" id="voit">
 <h3>Votre voiture comme neuve</h3>
-<p>Intérieur, extérieur, sièges : Net Confort nettoie votre voiture chez vous.</p>
+<p>Intérieur, extérieur, sièges&nbsp;: Net Confort nettoie votre voiture chez vous.</p>
 <svg class="voiture" viewBox="0 0 220 100" role="img" aria-label="Voiture propre">
 <rect x="0" y="88" width="220" height="3" rx="1.5" fill="#E2DACB"/>
 <g class="car">
-<path d="M14 70V56Q14 51 20 49L50 45L70 25Q74 21 80 21H138Q146 21 151 27L168 47L198 51Q208 53 208 62V70Z" fill="#1F8A5B"/>
+<path d="M14 70V56Q14 51 20 49L50 45L70 25Q74 21 80 21H138Q146 21 151 27L168 47L198 51Q208 53 208 62V70Z" fill="#1B7F52"/>
 <path d="M78 27L67 45H104V27Z" fill="#EAF3EC"/>
 <path d="M112 27V45H160L145 29Q143 27 139 27Z" fill="#EAF3EC"/>
-<rect x="190" y="56" width="14" height="6" rx="3" fill="#F2D16B"/>
+<rect x="190" y="56" width="14" height="6" rx="3" fill="#F2D16B"/><rect x="14" y="56" width="8" height="6" rx="3" fill="#C8441C"/>
 <g class="roue"><circle cx="58" cy="72" r="15" fill="#1F2A44"/><circle cx="58" cy="72" r="6" fill="#fff"/><path d="M58 59V85M45 72H71" stroke="#fff" stroke-width="2.5"/></g>
 <g class="roue"><circle cx="164" cy="72" r="15" fill="#1F2A44"/><circle cx="164" cy="72" r="6" fill="#fff"/><path d="M164 59V85M151 72H177" stroke="#fff" stroke-width="2.5"/></g>
 </g>
-<path class="etincelle" style="animation-delay:1.1s" d="M96 8l2.6 7 7 2.6-7 2.6-2.6 7-2.6-7-7-2.6 7-2.6z" fill="#E4572E"/>
-<path class="etincelle" style="animation-delay:1.8s" d="M150 4l2.6 7 7 2.6-7 2.6-2.6 7-2.6-7-7-2.6 7-2.6z" fill="#E4572E"/>
-<path class="etincelle" style="animation-delay:2.5s" d="M30 26l2.6 7 7 2.6-7 2.6-2.6 7-2.6-7-7-2.6 7-2.6z" fill="#E4572E"/>
+<path class="etincelle" style="animation-delay:1.1s" d="M96 8l2.6 7 7 2.6-7 2.6-2.6 7-2.6-7-7-2.6 7-2.6z" fill="#C8441C"/>
+<path class="etincelle" style="animation-delay:1.8s" d="M150 4l2.6 7 7 2.6-7 2.6-2.6 7-2.6-7-7-2.6 7-2.6z" fill="#C8441C"/>
+<path class="etincelle" style="animation-delay:2.5s" d="M30 26l2.6 7 7 2.6-7 2.6-2.6 7-2.6-7-7-2.6 7-2.6z" fill="#C8441C"/>
 </svg>
 <div class="chips" style="margin-top:12px">
-<span class="chip">Complet 79 €</span><span class="chip">Intérieur seul 49 €</span><span class="chip">Sièges +50 €</span>
+<span class="chip">Complet 79&nbsp;€</span><span class="chip">Intérieur seul 49&nbsp;€</span><span class="chip">Sièges +50&nbsp;€</span>
 </div>
 <a class="bouton" href="#estim" data-p="voiture">Estimer ma voiture</a>
 </section>
@@ -228,16 +242,16 @@ footer a{color:#fff;font-weight:600}
 <div class="chips">
 <span class="chip">Split</span><span class="chip">Multi-split</span><span class="chip">Gainable</span><span class="chip">Cassette</span><span class="chip">Console</span><span class="chip">VRV / VRF</span><span class="chip">Pompe à chaleur</span>
 </div>
-<p style="margin-top:14px">Net Confort est formé au froid et à la climatisation : le matériel et les produits sont adaptés à chaque appareil, pour un résultat propre sans abîmer l'installation.</p>
+<p style="margin-top:14px">Net Confort est spécialisé dans la climatisation&nbsp;: formation professionnelle au froid et à la climatisation, matériel adapté et produits spécifiques. Chaque appareil est nettoyé proprement, sans abîmer l'installation.</p>
 
-<div class="garantie"><strong>Garantie :</strong> pas satisfait ? Net Confort repasse gratuitement sous 48 h.</div>
+<div class="garantie"><strong>Garantie&nbsp;:</strong> pas satisfait&nbsp;? Net Confort repasse gratuitement sous 48&nbsp;h.</div>
 
 <h2>Zone d'intervention</h2>
 <div class="zone">
 <p><strong>Toute l'Île-de-France.</strong></p>
 <p>Déplacement <strong>offert</strong> à Saint-Denis, L'Île-Saint-Denis, Saint-Ouen et Épinay-sur-Seine.</p>
-<p>Ailleurs en Île-de-France : déplacement à partir de 10 €.</p>
-<p>Hors Île-de-France : tarif sur demande.</p>
+<p>Ailleurs en Île-de-France&nbsp;: déplacement à partir de 10&nbsp;€.</p>
+<p>Hors Île-de-France&nbsp;: tarif sur demande.</p>
 </div>
 
 <h2>Comment ça se passe</h2>
@@ -248,19 +262,19 @@ footer a{color:#fff;font-weight:600}
 </ol>
 
 <h2>Questions fréquentes</h2>
-<details><summary>Ma clim ne marche plus : pouvez-vous venir ?</summary><p>Oui, pour un diagnostic et les dépannages courants (évacuation bouchée, filtres, télécommande, réglages). Net Confort ne réalise pas les recharges de fluide ni les réparations de fuite : si votre diagnostic en révèle une, le devis vous l'indique.</p></details>
-<details><summary>Intervenez-vous sur les VRV et les pompes à chaleur ?</summary><p>Oui pour le nettoyage, l'entretien et le diagnostic, hors circuit de fluide frigorigène. Décrivez votre installation sur WhatsApp et un devis vous est établi.</p></details>
-<details><summary>Combien de temps ça prend ?</summary><p>Pour une climatisation, comptez environ 45 minutes par appareil. Pour le ménage, ça dépend de la surface. Pour une voiture, environ 2 heures pour un nettoyage complet. Une estimation est donnée avec le devis.</p></details>
-<details><summary>Combien coûte le déplacement ?</summary><p>Il est offert autour de Saint-Denis. Ailleurs en Île-de-France, il démarre à 10 € et dépend de la distance. Le montant exact est écrit avant que vous validiez.</p></details>
-<details><summary>Dois-je être présent ?</summary><p>Votre présence est préférable, au moins au début et à la fin. Il faut pouvoir accéder au logement ou à la voiture, et à une prise pour la clim.</p></details>
-<details><summary>Comment je paie ?</summary><p>À la fin de l'intervention, une fois que vous êtes satisfait. Aucun acompte n'est demandé. Les moyens de paiement sont précisés avec le devis.</p></details>
+<details><summary>Ma clim ne marche plus&nbsp;: pouvez-vous venir&nbsp;?</summary><p>Oui, pour un diagnostic et les dépannages courants (évacuation bouchée, filtres, télécommande, réglages). Net Confort ne réalise pas les recharges de fluide ni les réparations de fuite&nbsp;: si votre diagnostic en révèle une, le devis vous l'indique.</p></details>
+<details><summary>Intervenez-vous sur les VRV et les pompes à chaleur&nbsp;?</summary><p>Oui pour le nettoyage, l'entretien et le diagnostic, hors circuit de fluide frigorigène. Décrivez votre installation sur WhatsApp et un devis vous est établi.</p></details>
+<details><summary>Combien de temps ça prend&nbsp;?</summary><p>Pour une climatisation, comptez environ 45 minutes par appareil. Pour le ménage, ça dépend de la surface. Pour une voiture, environ 2 heures pour un nettoyage complet. Une estimation est donnée avec le devis.</p></details>
+<details><summary>Combien coûte le déplacement&nbsp;?</summary><p>Il est offert autour de Saint-Denis. Ailleurs en Île-de-France, il démarre à 10&nbsp;€ et dépend de la distance. Le montant exact est écrit avant que vous validiez.</p></details>
+<details><summary>Dois-je être présent&nbsp;?</summary><p>Votre présence est préférable, au moins au début et à la fin. Il faut pouvoir accéder au logement ou à la voiture, et à une prise pour la clim.</p></details>
+<details><summary>Comment je paie&nbsp;?</summary><p>À la fin de l'intervention, une fois que vous êtes satisfait. Aucun acompte n'est demandé. Les moyens de paiement sont précisés avec le devis.</p></details>
 
 <a class="bouton" href="https://wa.me/33749897428?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20">Demander un devis sur WhatsApp</a>
 </main>
 
 <footer><div class="in">
 <p><strong>Net Confort</strong> — Jeson Mascarenhas, entrepreneur individuel — SIRET [À COMPLÉTER]</p>
-<p>07 49 89 74 28 · netclim@gmail.com</p>
+<p><a href="tel:+33749897428">07 49 89 74 28</a> · <a href="mailto:netclim@gmail.com">netclim@gmail.com</a></p>
 <p><a href="/legal.html#mentions">Mentions légales</a> · <a href="/legal.html#cgv">Conditions de vente</a> · <a href="/legal.html#confidentialite">Confidentialité</a></p>
 </div></footer>
 
@@ -273,13 +287,20 @@ var reduit=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce
 var ent=document.querySelector('.top');
 window.addEventListener('scroll',function(){ent.classList.toggle('ombre',window.scrollY>8)},{passive:true});
 
+/* Barre du bas : visible seulement après le premier bouton */
+var barre=document.querySelector('.barre'),hb=document.querySelector('.hero .bouton');
+if(barre&&hb&&'IntersectionObserver' in window){
+barre.classList.add('cache');
+new IntersectionObserver(function(en){barre.classList.toggle('cache',en[0].isIntersecting);},{threshold:0}).observe(hb);
+}
+
 /* Estimateur de prix */
 var S={p:'clim',n:1,h:2,v:'complet',s:false};
 var zChamps=document.getElementById('champs'),zV=document.getElementById('prixVal'),zP=document.getElementById('prixPromo'),zR=document.getElementById('res'),zB=document.getElementById('estBtn');
 var cur=79,tok=0;
 function fmt(x){return Number.isInteger(x)?String(x):x.toFixed(2).replace('.',',');}
 function calc(){
-if(S.p==='clim'){return{d:'Nettoyage de clim, '+S.n+(S.n>1?' appareils':' appareil'),p:S.n===1?79:(S.n===2?129:null)};}
+if(S.p==='clim'){return{d:'Nettoyage de clim, '+S.n+(S.n>1?' splits':' split'),p:S.n===1?79:(S.n===2?129:null)};}
 if(S.p==='dep'){return{d:'Dépannage de clim (précisez la marque et la panne)',p:null};}
 if(S.p==='menage'){return{d:'Ménage, '+S.h+' h',p:23*S.h};}
 if(S.p==='fin'){return{d:'Nettoyage de fin de bail',p:null};}
@@ -287,13 +308,13 @@ var base=S.v==='complet'?79:49;
 return{d:(S.v==='complet'?'Nettoyage de voiture, intérieur et extérieur':'Nettoyage de voiture, intérieur seul')+(S.s?', avec shampouinage des sièges':''),p:base+(S.s?50:0)};
 }
 function stepper(label,val,note){
-return '<div class="champ"><label>'+label+'</label><div class="pm"><button type="button" data-a="moins" aria-label="Moins">−</button><output>'+val+'</output><button type="button" data-a="plus" aria-label="Plus">+</button></div><small class="note">'+note+'</small></div>';
+return '<div class="champ"><span class="lib">'+label+'</span><div class="pm"><button type="button" data-a="moins" aria-label="Moins">−</button><output>'+val+'</output><button type="button" data-a="plus" aria-label="Plus">+</button></div><small class="note">'+note+'</small></div>';
 }
 function champsHtml(){
-if(S.p==='clim'){return stepper('Nombre d\'appareils',S.n,S.n>=3?'Au-delà de 2 appareils : devis sur mesure.':'Split, multi-split : 79 € le premier, 129 € pour 2.');}
-if(S.p==='menage'){return stepper('Nombre d\'heures',S.h,'2 heures minimum, 23 € de l\'heure.');}
+if(S.p==='clim'){return stepper('Nombre de splits',S.n,S.n>=3?'À partir de 3 appareils\u00a0: devis sur mesure.':'79\u00a0€ le premier, 129\u00a0€ pour 2. Autres types d\'appareils\u00a0: sur devis.');}
+if(S.p==='menage'){return stepper('Nombre d\'heures',S.h,'2 heures minimum, 23\u00a0€ de l\'heure.');}
 if(S.p==='voiture'){
-return '<div class="champ"><label>Formule</label><div class="choix"><button type="button" class="cb'+(S.v==='complet'?' on':'')+'" data-a="complet">Complet 79 €</button><button type="button" class="cb'+(S.v==='int'?' on':'')+'" data-a="int">Intérieur seul 49 €</button></div></div><div class="champ"><div class="choix"><button type="button" class="cb'+(S.s?' on':'')+'" data-a="sieges">Shampouinage des sièges +50 €</button></div><small class="note">SUV, utilitaire ou voiture très sale : sur devis.</small></div>';
+return '<div class="champ"><span class="lib">Formule</span><div class="choix"><button type="button" class="cb'+(S.v==='complet'?' on':'')+'" data-a="complet">Complet 79\u00a0€</button><button type="button" class="cb'+(S.v==='int'?' on':'')+'" data-a="int">Intérieur seul 49\u00a0€</button></div></div><div class="champ"><div class="choix"><button type="button" class="cb'+(S.s?' on':'')+'" data-a="sieges">Shampouinage des sièges +50\u00a0€</button></div><small class="note">SUV, utilitaire ou voiture très sale\u00a0: sur devis.</small></div>';
 }
 if(S.p==='dep'){return '<div class="champ"><small class="note" style="margin-top:0">Diagnostic de panne et dépannages courants, hors circuit de fluide frigorigène. Indiquez la marque et la panne sur WhatsApp : le devis est gratuit.</small></div>';}
 return '<div class="champ"><small class="note" style="margin-top:0">Visite gratuite, prix fixé avant de commencer. Indiquez la surface sur WhatsApp.</small></div>';
@@ -301,14 +322,14 @@ return '<div class="champ"><small class="note" style="margin-top:0">Visite gratu
 function montre(v){
 tok++;var my=tok;
 if(v===null){zV.textContent='Sur devis';cur=0;return;}
-if(reduit){zV.textContent=fmt(v)+' €';cur=v;return;}
+if(reduit){zV.textContent=fmt(v)+'\u00a0€';cur=v;return;}
 var start=cur,t0=null;
 function step(t){
 if(my!==tok){return;}
 if(!t0){t0=t;}
 var k=Math.min((t-t0)/450,1);
 var val=start+(v-start)*(1-Math.pow(1-k,3));
-zV.textContent=(k<1?Math.round(val):fmt(v))+' €';
+zV.textContent=(k<1?Math.round(val):fmt(v))+'\u00a0€';
 if(k<1){requestAnimationFrame(step);}else{cur=v;}
 }
 requestAnimationFrame(step);
@@ -318,7 +339,7 @@ document.querySelectorAll('#choixPresta .cb').forEach(function(b){b.classList.to
 zChamps.innerHTML=champsHtml();
 var c=calc();
 montre(c.p);
-zP.textContent=c.p===null?'Un devis écrit, gratuit, vous est envoyé sur WhatsApp.':'Avec l\'offre de lancement (-10 %) : '+fmt(Math.round(c.p*90)/100)+' €';
+zP.textContent=c.p===null?'Devis écrit et gratuit sur WhatsApp.':'Avec l\'offre de lancement (-10\u00a0%)\u00a0: '+fmt(Math.round(c.p*90)/100)+'\u00a0€';
 zB.href='https://wa.me/33749897428?text='+encodeURIComponent('Bonjour, je souhaite un devis : '+c.d+(c.p!==null?' (estimation '+fmt(c.p)+' €)':'')+'. Ville : ');
 if(pop&&!reduit){zR.classList.remove('pop');void zR.offsetWidth;zR.classList.add('pop');}
 }
